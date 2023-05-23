@@ -1,7 +1,7 @@
 {
-  "name": "yellownewengineers",
+  "name": "turquoisenewengineers",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "build": "npm run with-env /bin/bash ./.build.sh",
     "start": "npm run build && npm run with-env node ./.build/index.js",

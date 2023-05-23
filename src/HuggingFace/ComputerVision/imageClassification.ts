@@ -4,14 +4,15 @@ import { loadImage } from "./util/loadImage"
 const API_TOKEN = process.env.HUGGINGFACE_API_KEY;
 const exampleImageUrl = "https://global-uploads.webflow.com/5ef788f07804fb7d78a4127a/64255f02f925493e47854276_76eq2p.jpg";
 
-/**
- * @param {string} endpointUrl
- * @param {ImageClassificationInput} input
- * @return {Promise<ImageClassificationResponse[]>}
- */
-export const imageClassification = async (endpointUrl, input) => {
+type ImageClassificationInput = ArrayBuffer;
+type ImageClassificationResponse = {
+  label: string;
+  score: number;
+};
+
+export const imageClassification = async (input: ImageClassificationInput): Promise<ImageClassificationResponse[]> => {
   const response = await fetch(
-    endpointUrl,
+    "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
     {
       headers: { Authorization: `Bearer ${API_TOKEN}` },
       method: "POST",
@@ -26,20 +27,6 @@ export const imageClassification = async (endpointUrl, input) => {
 export const imageClassificationExample = async () => {
   const imageBuffer = await loadImage(exampleImageUrl);
 
-  const classifications = await imageClassification(
-		"https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
-	imageBuffer);
+  const classifications = await imageClassification(imageBuffer);
   console.log(classifications);
 };
-
-/**
- * @typedef ImageClassificationInput
- * @type {ArrayBuffer}
- */
-
-/**
- * @typedef ImageClassificationResponse
- * @type {Object}
- * @property {string} label
- * @property {number} score
- */

@@ -1,7 +1,7 @@
 compile = "npm run build"
 run = "node --enable-source-maps .build/index.js"
 entrypoint = "index.ts"
-hidden = [".build", ".config", ".build.sh", ".gitignore", "tsconfig.json"]
+hidden = [".build", ".config", ".build.sh", ".gitignore"]
 
 [packager]
 language = "nodejs"

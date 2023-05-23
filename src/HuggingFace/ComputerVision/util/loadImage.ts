@@ -1,8 +1,4 @@
-/**
- * @param {string} url
- * @return {Promise<ArrayBuffer>}
- */
-export const loadImage = async (url) => {
+export const loadImage = async (url: string): Promise<ArrayBuffer> => {
   const response = await fetch(url);
   const blob = await response.blob();
   const buffer = await new Response(blob).arrayBuffer();

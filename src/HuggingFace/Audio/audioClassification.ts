@@ -4,12 +4,16 @@ import { fetchAudioData } from './util/fetchAudioData'
 const API_TOKEN = process.env.HUGGINGFACE_API_KEY;
 const exampleAudioDataUrl = "https://upload.wikimedia.org/wikipedia/commons/d/dd/Armstrong_Small_Step.ogg"
 
-/**
- * @param {string} endpointUrl
- * @param {AudioClassificationInput} input
- * @return {Promise<AudioClassificationResponse[]>}
- */
-export const audioClassification = async (endpointUrl, input) => {
+type AudioClassificationInput = {
+  audio_data: ArrayBuffer;
+};
+
+type AudioClassificationResponse = {
+  label: string;
+  score: number;
+};
+
+export const audioClassification = async (endpointUrl: string, input: AudioClassificationInput): Promise<AudioClassificationResponse[]> => {
   const response = await fetch(
     endpointUrl,
     {
@@ -29,24 +33,13 @@ export const audioClassification = async (endpointUrl, input) => {
 export const audioClassificationExample = async () => {
   const audioData = await fetchAudioData(exampleAudioDataUrl)
 
+  const input: AudioClassificationInput = {
+    audio_data: audioData
+  };
+
   const classificationResult = await audioClassification(
 		"https://api-inference.huggingface.co/models/superb/hubert-large-superb-er",
-	{
-    audio_data: audioData
-  });
-
+		input
+	);
   console.log(classificationResult);
 };
-
-/**
- * @typedef AudioClassificationInput
- * @type {Object}
- * @property {ArrayBuffer} audio_data
- */
-
-/**
- * @typedef AudioClassificationResponse
- * @type {Object}
- * @property {string} label
- * @property {number} score
- */
