@@ -8,7 +8,7 @@ First, head over to this repostory on the Tulsa WebDevs Github:
 
 >**Note**
 >
->Prefer TypeScript? Check out the [typescript branch](github.com/tulsawebdevs/hack-night-ai-apis/tree/typescript)
+>Prefer TypeScript? Check out the [typescript branch](https://github.com/tulsawebdevs/hack-night-ai-apis/tree/typescript)
 
  - [Setup](#setup)
     - [Using your own editor](#using-your-own-editor)
