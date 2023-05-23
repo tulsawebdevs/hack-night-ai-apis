@@ -127,12 +127,7 @@ npm start
 
 Each file has a link to the relevant documentation for the API it uses.
 
-You can also check out the short README.md file in each API's directory for more information:
-
- - [OpenAI](./src/OpenAI/README.md)
- - [HuggingFace](./src/HuggingFace/README.md)
-
-Finally, I'm happy to answer any questions if you're still stuck! Happy hacking!
+Also, I'm happy to answer any questions if you're still stuck! Happy hacking!
 
 <!--
 TODO: 

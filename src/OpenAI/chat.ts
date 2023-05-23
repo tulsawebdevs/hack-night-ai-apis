@@ -1,3 +1,4 @@
+//https://platform.openai.com/docs/api-reference/chat/create
 const API_KEY = process.env.OPENAI_API_KEY
 const exampleMessage = "Please tell me a short story about a man named Rick Astley."
 
