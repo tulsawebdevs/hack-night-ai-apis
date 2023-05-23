@@ -1,0 +1,9 @@
+.env
+.build/
+node_modules
+TODO.md
+.github/
+.vscode/
+.idea/
+.DS_Store
+.ignored/
