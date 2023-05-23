@@ -2,13 +2,19 @@
 
 Welcome to Hack Night! We're providing this wrapper for the OpenAI and HuggingFace APIs to make it easier to get started. For each API, we've provided a utility function and an example of how to use it. This README will walk you through how to get started.
 
+<br/>
+
 First, head over to this repostory on the Tulsa WebDevs Github:
 
 `github.com/tulsawebdevs/hack-night-ai-apis`
 
+<br/>
+
 >**Note**
 >
 >Prefer JavaScript? Check out the [main branch](https://github.com/tulsawebdevs/hack-night-ai-apis/tree/main)
+
+<br/>
 
  - [Setup](#setup)
     - [Using your own editor](#using-your-own-editor)
@@ -19,6 +25,8 @@ First, head over to this repostory on the Tulsa WebDevs Github:
  - [Quick Start](#quick-start)
  - [Running your code](#running-your-code)
  - [I have more questions!](#i-have-more-questions)
+
+<br/>
 
 ## Setup
 ----
@@ -36,19 +44,17 @@ There are two ways to get started:
 
 1. Clone this repository
 2. Install dependencies
-
-```bash
-npm install
-```
+>```bash
+>npm install
+>```
 
 3. Create a file named `.env` at the project root and add [your API keys](#api-keys):
-
-```bash
-# OpenAI
-OPENAI_API_KEY=YOUR_API_KEY_HERE
-# HuggingFace
-HUGGINGFACE_API_KEY=YOUR_API_KEY_HERE
-```
+>```bash
+># OpenAI
+>OPENAI_API_KEY=YOUR_API_KEY_HERE
+># HuggingFace
+>HUGGINGFACE_API_KEY=YOUR_API_KEY_HERE
+>```
 
 ### Using Replit
 
@@ -58,6 +64,7 @@ HUGGINGFACE_API_KEY=YOUR_API_KEY_HERE
 4. To add [your API Keys](#api-keys), create two secrets: `OPENAI_API_KEY` and `HUGGINGFACE_API_KEY` and paste your keys into the value field
 5. To check that everything is working, click the "Run" button at the top of the sidebar
 
+<br/>
 
 ## API Keys
 
@@ -76,6 +83,8 @@ To get started, you'll need API keys for both OpenAI and HuggingFace.
 2. If you don't already have an account, create one
 3. Click the "New token" button
 4. Copy the key to where it is needed (you won't be able to see it again)
+
+<br/>
 
 ## Quick Start
 
@@ -102,6 +111,8 @@ talkToDuck.then((response) => {
 });
 ```
 
+<br/>
+
 ## Running your code
 
 Running your code in the Replit environment is as simple as clicking the "Run" button at the top of the sidebar. If you're using your own editor, you can run your code with the following command:
@@ -109,6 +120,8 @@ Running your code in the Replit environment is as simple as clicking the "Run" b
 ```bash
 npm start
 ```
+
+<br/>
 
 ## I have more questions!
 
