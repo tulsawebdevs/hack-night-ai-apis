@@ -52,7 +52,7 @@ HUGGINGFACE_API_KEY=YOUR_API_KEY_HERE
 
 ### Using Replit
 
-1. Head over to the [Replit](https://replit.com/@helmturner/YellowNewEngineers) and click the "Fork" button
+1. Head over to the [Replit](https://replit.com/@helmturner/TurquoiseNewEngineers) and click the "Fork" button
 2. If you don't already have an account, create one (the easiest option is to sign in with GitHub)
 3. Click the "Secrets" button (the lock icon) under "Tools" on the left sidebar
 4. To add [your API Keys](#api-keys), create two secrets: `OPENAI_API_KEY` and `HUGGINGFACE_API_KEY` and paste your keys into the value field
@@ -79,9 +79,9 @@ To get started, you'll need API keys for both OpenAI and HuggingFace.
 
 ## Quick Start
 
-Just edit `index.js` (`index.ts` if using TypeScript) and [run your code](#running-your-code)! You can import the functions from the `src` directory like so:
+Just edit `index.ts` and [run your code](#running-your-code)! You can import the functions from the `src` directory like so:
 
-```js
+```ts
 import { chat, chatExample } from './src/OpenAI/chat';
 
 // run the example
@@ -128,4 +128,13 @@ TODO:
 - [ ] Add README.md to OpenAI directory
 - [ ] Add README.md to HuggingFace directory
 - [ ] Create Scribe video walkthrough
+-->
+
+<!--
+XXX: The following root files must be updated in sync with the `main` branch, because they differ slightly between the two branches:
+- [ ] README.md
+- [ ] package.json
+- [ ] package-lock.json
+- [ ] .replit
+- [ ] index.ts
 -->
