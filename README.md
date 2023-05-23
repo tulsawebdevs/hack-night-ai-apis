@@ -8,7 +8,7 @@ First, head over to this repostory on the Tulsa WebDevs Github:
 
 >**Note**
 >
->Prefer JavaScript? Check out the [main branch](github.com/tulsawebdevs/hack-night-ai-apis/tree/main)
+>Prefer JavaScript? Check out the [main branch](https://github.com/tulsawebdevs/hack-night-ai-apis/tree/main)
 
  - [Setup](#setup)
     - [Using your own editor](#using-your-own-editor)
