@@ -79,7 +79,7 @@ To get started, you'll need API keys for both OpenAI and HuggingFace.
 
 ## Quick Start
 
-Just edit `index.js` (`index.ts` if using TypeScript) and [run your code](#running-your-code)! You can import the functions from the `src` directory like so:
+Just edit `index.js` and [run your code](#running-your-code)! You can import the functions from the `src` directory like so:
 
 ```js
 import { chat, chatExample } from './src/OpenAI/chat';
@@ -128,4 +128,13 @@ TODO:
 - [ ] Add README.md to OpenAI directory
 - [ ] Add README.md to HuggingFace directory
 - [ ] Create Scribe video walkthrough
+-->
+
+<!--
+XXX: The following root files must be updated in sync with the `typescript` branch, because they differ slightly between the two branches:
+- [ ] README.md
+- [ ] package.json
+- [ ] package-lock.json
+- [ ] .replit
+- [ ] index.js
 -->
